@@ -32,7 +32,7 @@ programa
 			senao
 			{
 				limpa()
-				escreva("Infelizmente você errou! Tente novamente")
+				escreva("Seu palpite está errado!")
 				u.aguarde(2000)
 			}
 			
@@ -40,6 +40,7 @@ programa
 		}
 		se(chances == 5 e palpite != sorteio)
 		{
+			limpa()
 			escreva("\nInfelizmente você gastou todas as suas chances")
 			leia(enter)
 		}
@@ -50,7 +51,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 886; 
+ * @POSICAO-CURSOR = 502; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {palpite, 10, 9, 7}-{sorteio, 10, 18, 7}-{chances, 10, 27, 7};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
