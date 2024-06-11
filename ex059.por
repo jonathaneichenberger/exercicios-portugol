@@ -8,13 +8,14 @@ d) qual é a média de idade entre os homens
  */
 programa
 {
-	inteiro maior_idade = 0, homens_cadastrados = 0, mulher_mais_jovem, idade, contador = 0
+	inteiro maior_idade = 0, homens_cadastrados = 0, mulher_mais_jovem, idade, contador = 0
 	real media = 0.0
-	caracter resposta, sexo
+	caracter resposta = 's', sexo
 	
 	funcao inicio()
 	{
-		faca
+		
+		enquanto(resposta != 'n' e resposta != 'N')
 		{
 			
 			escreva("Qual a idade da ", contador + 1, ".a pessoa à ser cadastrada? ")
@@ -58,12 +59,13 @@ programa
 
 			limpa()
 				
-		}enquanto(resposta != 'n' e resposta != 'N')
-
+		}
+		
 		escreva("a) A maior idade cadastrada foi: ", maior_idade, " anos.\n")
 		escreva("b) Foram cadastrados ", homens_cadastrados, " homens no programa.\n")
 		escreva("c) A idade da mulher mais jovem é: ", mulher_mais_jovem, " anos.\n")
 		escreva("d) A média de idade entre os homens é: ", media / contador, " anos.\n\n")
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -71,7 +73,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 862; 
+ * @POSICAO-CURSOR = 532; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

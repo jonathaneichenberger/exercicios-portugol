@@ -5,14 +5,14 @@ mulheres. O programa vai perguntar ao usuário se ele quer continuar ou não
 sempre que ler os dados de um funcionário.
  */
 programa
-{	
-	caracter sexo, resposta 
+{	
+	caracter sexo, resposta = 's' 
 	real salario, salario_mulheres = 0.0, salario_homens = 0.0
 	inteiro contador =  1
 	
 	funcao inicio()
 	{
-		faca
+		enquanto(resposta != 'n' e resposta != 'N')
 		{
 			limpa()
 			escreva("Qual o salário do ", contador, "º funcionário? R$:")
@@ -42,7 +42,7 @@ programa
 			escreva("Deseja cadastrar outro funcionário? [S/N]: ")
 			leia(resposta)
 						
-		}enquanto(resposta != 'n' e resposta != 'N')
+		}
 
 		limpa()
 
@@ -55,7 +55,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1154; 
+ * @POSICAO-CURSOR = 321; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

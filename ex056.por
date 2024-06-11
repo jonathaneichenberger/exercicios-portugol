@@ -5,20 +5,23 @@ Obs: O programa será interrompido quando o número 1111 for digitado
  */
 programa
 {
-	inteiro soma = 0, numero, contador = 1
+	inteiro soma = 0, numero = 0, contador = 1
 	
 	funcao inicio()
 	{
-		faca
+		enquanto(numero != 1111)
 		{
 			escreva("Digite o ", contador,"º número: ")
 			leia(numero)
 
-			soma += numero
-
+			se(numero != 1111)
+			{
+				soma += numero	
+			}
+			
 			contador++
 			
-		}enquanto(numero != 1111)
+		}
 
 		limpa()
 		escreva("A soma dos ", contador, " números digitados foi: ", soma, "\n\n")
@@ -29,7 +32,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 479; 
+ * @POSICAO-CURSOR = 421; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
