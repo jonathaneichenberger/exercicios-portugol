@@ -8,27 +8,29 @@ elementos da sequência de Fibonacci:
  */
 programa
 {
-	inteiro vetor[15], termo_anterior = 1, termo_atual = 1, proximo_termo = 0
+	inteiro vetor[15], termo_anterior = 1, termo_atual = 1, proximo_termo = 0
 	
 	funcao inicio()
 	{
 		para(inteiro i = 0; i < 15; i++)
 		{
-			se(i == 0)
+			se(i < 2)
 			{
-				escreva(termo_anterior, " ", termo_atual, " ")
+				vetor[i] = termo_atual
 			}
 			senao
 			{
-				proximo_termo = termo_anterior + termo_atual
-				
-				escreva(proximo_termo, " ")
+				vetor[i] = termo_anterior + termo_atual
 				
 				termo_anterior = termo_atual
-				termo_atual = proximo_termo
+				termo_atual = vetor[i]
 			}
 		}
-		
+		para(inteiro i = 0; i < 15; i++)
+		{
+			escreva(vetor[i], " ")
+		}
+	
 		escreva("\n")
 	}
 }
@@ -37,9 +39,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 706; 
+ * @POSICAO-CURSOR = 418; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {vetor, 11, 9, 5};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
