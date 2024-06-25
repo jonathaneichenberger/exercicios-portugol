@@ -14,7 +14,21 @@ programa
 	
 	funcao inicio()
 	{
-		escreva("Olá Mundo")
+	
+		gerador("Aprendendo Portugol", 4)
+		
+	}
+
+	funcao gerador(cadeia msg, inteiro quantidade)
+	{
+		limpa()
+		escreva("+-------=======-------+\n")
+		para(inteiro i = 0; i < quantidade; i++)
+		{
+			escreva("  ", msg, "\n")
+		}
+		escreva("+-------=======-------+\n")
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -22,7 +36,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 284; 
+ * @POSICAO-CURSOR = 572; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
