@@ -5,7 +5,7 @@ de Fibonacci:
  */
 programa
 {
-	inteiro proximo_termo = 0, termo_anterior = 1, termo_atual = 1
+	inteiro proximo_termo = 0, termo_anterior = 1, termo_atual = 1
 	
 	funcao inicio()
 	{
@@ -21,8 +21,8 @@ programa
 				
 				escreva(proximo_termo, " ")
 				
-				termo_atual = termo_anterior
-				termo_anterior = proximo_termo
+				termo_anterior = termo_atual
+				termo_atual = proximo_termo
 			}
 		}
 	}
@@ -32,7 +32,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 263; 
+ * @POSICAO-CURSOR = 500; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
