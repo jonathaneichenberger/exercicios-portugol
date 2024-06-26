@@ -9,7 +9,36 @@ programa
 	
 	funcao inicio()
 	{
-		escreva("Olá Mundo")
+		inteiro comeco_contagem
+		inteiro fim_contagem
+		inteiro incremento
+		
+		escreva("Digite qual será o valor inicial da contagem: ")
+		leia(comeco_contagem)
+
+		limpa()
+
+		escreva("Digite qual será o valor do fim da contagem: ")
+		leia(fim_contagem)
+
+		limpa()
+
+		escreva("Digite qual será o incremento utilizado para a contagem: ")
+		leia(incremento)
+
+		contador(comeco_contagem, fim_contagem, incremento)
+
+		
+	}
+
+	funcao contador(inteiro inic, inteiro fim, inteiro inc)
+	{
+		limpa()
+
+		para(inteiro i = inic; i <= fim; i += inc)
+		{
+			escreva(i, ", ")
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -17,7 +46,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 284; 
+ * @POSICAO-CURSOR = 861; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
