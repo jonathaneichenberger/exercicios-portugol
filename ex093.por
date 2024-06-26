@@ -3,6 +3,9 @@
 três valores como parâmetro: o início, o fim e o incremento de uma contagem. O
 programa principal deve solicitar a digitação desses valores e passá-los ao
 procedimento, que vai mostrar a contagem na tela.
+Ex: Para os valores de início (4), fim (20) e incremento(3) teremos
+Contador(4, 20, 3) vai mostrar na tela 4 >> 7 >> 10 >> 13 >> 16 >> 19 >> FIM
+
  */
 programa
 {
@@ -37,8 +40,9 @@ programa
 
 		para(inteiro i = inic; i <= fim; i += inc)
 		{
-			escreva(i, ", ")
+			escreva(i, " >> ")
 		}
+		escreva("FIM")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -46,7 +50,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 861; 
+ * @POSICAO-CURSOR = 1024; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
