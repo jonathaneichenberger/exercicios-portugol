@@ -9,7 +9,37 @@ programa
 	
 	funcao inicio()
 	{
-		escreva("Olá Mundo")
+		inteiro numero
+		inteiro expoente
+		
+		escreva("Digite um valor: ")
+		leia(numero)
+
+		limpa()
+
+		escreva("Digite o valor do expoente: ")
+		leia(expoente)
+
+		limpa()
+
+		potencia(numero, expoente)
+	}
+
+	funcao potencia(inteiro numero, inteiro expoente)
+	{
+		inteiro resultado = 0
+		inteiro total_anterior = 0
+
+		escreva("O número ", numero, " elevado à ", expoente, " é igual a: ")
+
+		total_anterior = numero
+		
+		para(inteiro i = 1; i < expoente; i++)
+		{
+			resultado = total_anterior * numero
+			total_anterior = resultado
+		}
+		escreva(resultado)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -17,7 +47,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 226; 
+ * @POSICAO-CURSOR = 652; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
