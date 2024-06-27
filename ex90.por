@@ -18,18 +18,19 @@ programa
 		escreva("Digite o 2º Valor: ")
 		leia(segundo_valor)
 		
-		limpa()
-		escreva("A soma entre ", primeiro_valor, " + ", segundo_valor, " é igual a: ", somador(primeiro_valor, segundo_valor))
+		somador(primeiro_valor, segundo_valor)
 		
 	}
 
-	funcao inteiro somador(inteiro n1, inteiro n2)
+	funcao somador(inteiro n1, inteiro n2)
 	{
 		inteiro soma = 0
 
 		soma = n1 + n2
 
-		retorne soma
+		limpa()
+		escreva("A soma entre ", n1, " + ", n2, " é igual a: ", soma)
+
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -37,7 +38,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 386; 
+ * @POSICAO-CURSOR = 181; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
